@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
+      <style>
+        .words {position : absolute; z-index : 10; margin-top: 170px;} .words2 {position : absolute; z-index: 1; margin-top: 170px;} .Active {opacity:0.6; backgrouhd-color: "blue";  content:"Finished"; z-index:2;} .boldBorder {border:5px solid blue; padding:0;} .backGround {background-image: "C:/Users/Guest/Downloads/rainingDay.JPG"; background-repeat: no-repeat; background-size:cover;} 
+          .spiderMan1 {position:absolute; z-index: 1; left:100px; top:50px;} .comicScreen {z-index:0; position:absolute;} .spiderMan3 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan4 {position:absolute; z-index:1; left:280px;top:62px;} .spiderMan5 {position:absolute; z-index:1; top:101px; left:228px;} .spiderMan6 {position:absolute; z-index:2; left:220px; top:153px;}
+           .spiderman7 {position:absolute; z-index:2; left:40; top:50px;} .spiderman8 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan9 {position:absolute; z-index:1; right:17px;top:42px;}
+           .spiderMan10 {position:absolute; z-index:1; right:60px;top:33px;} .spiderMan11 {position:absolute; z-index:1; right:60px;top:33px;} #underImage {position : absolute; z-index:1; right:80px;top:5px;} #underImage2 {position : absolute; z-index:1; right:80px;top:5px;} #underImage3 {position : absolute; z-index:1; left:13px;top:80px;} #underImage4 {position : absolute; z-index:1; left:150px;top:35px;} #underImage5 {position : absolute; z-index:1; right:80px;top:95px;} 
+            .spiderMan13 {position:absolute; z-index: 1; left:100px; top:50px;} .spiderMan14 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan15 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan16 {position:absolute; z-index: 1; left:100px; top:50px;} 
+            .spiderMan17 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan18 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan19 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan20 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan21 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan22 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan23 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan24 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan25 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan26 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan27 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan28 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan29 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan30 {position:absolute; z-index:1; left:360px;top:52px;}
+             .slideImage {position : absolute; top:10px; left:50px; z-index:1; padding:20px 20px 10px 100px;} #alertBox {padding:0px 45px 10px 5px;} #containerStyle {position:absolute; height:90px; width:950px; padding-top:40px; padding-right:450px;} #mapWrapper{position:absolute; height:180px; width:250px; z-index:1; padding-top:20px; left:0;}
+      </style>   
+      
+    </head>
+    <body id="body"> 
+       <div class="container allScreens">
+          <div class="row" height = "400px">
+              <div class="col-xs-3 col-md-4" id="parentDiv1"><a href="#" id ="popover" data-toggle="popover" title="Archie Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
+                <span class="label label-primary lab">1</span> 
+                <video class ="comicScreen1" id="firstScreen" type="video/mp4" src ="C:/Users/Guest/Downloads/sky.mp4" width ="300px" height="190px" preload="none">        
+                </video></a></div>
+                <img class="spiderman spiderMan1" id="spiderMan1" src="C:/Users/Guest/Downloads/spidermman.GIF">
+              <!--<div class="progress">
+                  <div class="progress-bar progress-bar-success"  role="progressbar" aria-valuemin = "0" aria-veluemax = "100" aria-valuenow="20" style="width : 10%"></div>
+              </div>-->     
+              <div class="col-xs-3 col-md-4" id = "popover2"><span class="label label-primary lab" id="label2">2</span><video class="comicScreen2" id= "secondScreen" src="C:/Users/Guest/Downloads/darksky.mp4" width ="300px" height="190px" preload="none"></video></div>
+              <div class="col-xs-6 col-md-4" id="parentDiv3"><span class="label label-primary lab">3</span><video class="comicScreen3" id="thirdScreen" src ="C:/Users/Guest/Downloads/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan3" id="spiderMan3" src="C:/Users/Guest/Downloads/spidermanLand.PNG"></div>             
+               <!--<div class="clearfix visible-md-block"></div>-->
+          </div>
+          <div class="row">
+              <div class="col-sm-8 col-md-6" id="parentDiv4"><span class="label label-primary lab">4</span><br><video class="comicScreen comicScreen4" width = "450px" height="250px" id="fourthScreen" preload="none">
+                   <source id = "min1" src="C:/Users/Guest/Downloads/unilagBridge.mp4">
+              </video><img class="spiderman spiderMan4" id="spiderMan4" src="C:/Users/Guest/Downloads/spidermanBack.PNG"></div>
+              <div class="col-sm-4 col-md-6" id="parentDiv5"><span class="label label-primary lab">5</span><video class="comicScreen5" width="450px" height="250px" src ="C:/Users/Guest/Downloads/unilagBnL.mp4" preload="none"></video><img class="spiderman spiderMan5" id="spiderMan5" src="C:/Users/Guest/Downloads/spiderStand.PNG"></div>           
+          </div>       
+          <div class="row">
+             <div class="col-xs-12 col-md-12 col-md-offset-2" id="parentDiv6"><span class="label label-primary lab">6</span><video class="comicScreen6 comicScreen" src ="C:/Users/Guest/Downloads/sky.mp4" preload="none"></video>
+                <img class="spiderman spiderMan6" id="spiderMan6" src="C:/Users/Guest/Downloads/Spidersense.PNG">
+                <div class="carousel" data-ride="carousel" id="myCarousel">
+                    <!--<ol class="carousel-indicators">-->
+                       <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                       <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                       <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                    <!--</ol>-->
+                    <div class="carousel-inner" role="listbox">
+                       <div class="item active slideImage">
+                          <img src="C:/Users/Guest/Downloads/spider.PNG" class="spiderman" id="carousel1">
+                       </div>  
+                       <div class="item slideImage">
+                          <img src="C:/Users/Guest/Downloads/maryJane.JPG" class="spiderman" id="carousel2">
+                       </div>        
+                       <div class="item slideImage">
+                          <img src="C:/Users/Guest/Downloads/spidemanFlying.JPG" class="spiderman" id="carousel3">
+                       </div>
+                       <div class="item slideImage">
+                          <img src="C:/Users/Guest/Downloads/spiderwebFail.JPG" class="spiderman" id="carousel4">
+                       </div>  
+                       <div class="item slideImage">
+                          <img src="C:/Users/Guest/Downloads/spidermanFall.JPG" class="spiderman" id="carousel5">
+                       </div>         
+                       <div class="item slideImage">
+                          <img src="C:/Users/Guest/Downloads/spidermanfreeFall.JPG" class="spiderman" id="carousel6">
+                       </div> 
+                       <div class="item slideImage">
+                          <img src="C:/Users/Guest/Downloads/spidermangettingUp.JPG" class="spiderman" id="carousel7">
+                       </div>
+                       <div class="container slideImage spiderman item" id="containerStyle">
+                          <div class="alert alert-danger">
+                            <span class="glyphicon glyphicon-warning-sign" id="alertBox"> Alert! problem connecting to web host.....</span> 
+                          </div>
+                       </div> 
+                    </div>
+                </div>       
+             </div>
+             <div class="row" style="position:relative; margin-top:365px;">
+              <div class="col-sm-8 col-md-6" id="parentDiv7"><span class="label label-primary lab" id="parentDiv7">7</span><video class="comicScreen7 comicScreen" width = "450px" height="250px" id="seventhScreen" preload="none">
+                <source id = "min1" src="C:/Users/Guest/Downloads/treenbridge.mp4"></video><a href="#modal" data-toggle="modal"><img class="spiderman spiderman7" id="spiderMan7" src="C:/Users/Guest/Downloads/spideynewGeo.PNG"></a>
+                  <div class="container">
+                      <div class="modal fade" id="modal" role="dialog">
+                          <div class="modal-dialog dialog-xs">
+                              <div class="modal-content" id="mapWrapper"></div>  
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+              <div class="col-sm-4 col-md-6" id="parentDiv8"><span class="label label-primary lab" id="parentDiv8">8</span><video class="comicScreen8 comicScreen" id="eightScreen" width="450px" height="250px" src ="C:/Users/Guest/Downloads/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderman8" id="spiderMan8" src="C:/Users/Guest/Downloads/spidermanLDOL.GIF"/></div>           
+             </div>                      
+             <div class="row" style="position:relative; margin-top:305px;" height ="400px">
+               <div class="col-xs-3 col-md-4" id="parentDiv09"><a href="#" id ="parentDiv9" data-toggle="popover" title="Spiderman Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
+                <span class="label label-primary lab">9</span> 
+                <video class ="comicScreen9" id="ninthScreen" type="video/mp4" src ="C:/Users/Guest/Downloads/unilagTreenSky.mp4" width ="300px" height="190px" preload="none">        
+                </video></a>
+                <img class="spiderman spiderMan9" id="spiderMan9" src="C:/Users/Guest/Downloads/spthinking.GIF">
+               </div>       
+               <div class="col-xs-3 col-md-4" id="parentDiv10"><span class="label label-primary lab" id="label10">10</span><video class="comicScreen10" id= "tenthScreen" src="C:/Users/Guest/Downloads/unilagGarden.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan10" id="spiderMan10" src="C:/Users/Guest/Downloads/smNetrelease.PNG">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicscreen comicScreen11" id="elevenScreen" src ="C:/Users/Guest/Downloads/unilagGarden.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="spiderMan11" src="C:/Users/Guest/Downloads/smDangling.GIF">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen12" id="underScreen" src ="C:/Users/Guest/Downloads/unilagTreenSky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage" src="C:/Users/Guest/Downloads/spiderRopeFly.GIF">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen13" id="underScreen2" src ="C:/Users/Guest/Downloads/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage2" src="C:/Users/Guest/Downloads/spidermanrope2.GIF">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen14" id="underScreen3" src ="C:/Users/Guest/Downloads/blueSkynTree.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage3" src="C:/Users/Guest/Downloads/spSidePose.GIF">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen15" id="underScreen4" src ="C:/Users/Guest/Downloads/yaba.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage4" src="C:/Users/Guest/Downloads/spidermanhanging.GIF">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen16" id="underScreen5" src ="C:/Users/Guest/Downloads/sunset.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage5" src="C:/Users/Guest/Downloads/spOpenArms.GIF">
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-xs-12 col-md-12 col-md-offset-2" id="parentDiv12"><span class="label label-primary lab">12</span><br><video class="comicScreen17 comicScreen" src ="C:/Users/Guest/Downloads/sky.mp4" preload="none"></video>
+                <img class="spiderman spiderMan12" id="spiderMan12" src="C:/Users/Guest/Downloads/Spidersense.PNG">
+               </div>
+             </div>
+             <div class="row" style="position:relative; margin-top:200px;" height ="400px">
+               <div class="col-xs-3 col-md-4" id="parentDiv13">
+                <span class="label label-primary lab">13</span><br> 
+                <video class ="comicScreen comicScreen18" type="video/mp4" src ="C:/Users/Guest/Downloads/sky.mp4" width ="300px" height="190px" preload="none">        
+                </video></div>
+                <img class="spiderman spiderMan13" id="spiderMan13" src="C:/Users/Guest/Downloads/spidermman.GIF">  
+               <div class="col-xs-3 col-md-4" id = "parentDiv14"><span class="label label-primary lab">14</span><br><video class="comicScreen comicScreen19" src="C:/Users/Guest/Downloads/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan14" id="spiderMan14" src="C:/Users/Guest/Downloads/spidermanLand.PNG">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv15"><span class="label label-primary lab">15</span><br><video class="comicScreen20 comicScreen" src ="C:/Users/Guest/Downloads/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan15" id="spiderMan15" src="C:/Users/Guest/Downloads/spidermanLand.PNG"></div>             
+               <div class="clearfix visible-md-block"></div>
+             </div>
+             <div class="row" style="position:relative; margin-top:200px;" height ="400px">
+               <div class="col-xs-3 col-md-4" id="parentDiv16">
+                <span class="label label-primary lab">16</span><br> 
+                <video class ="comicScreen comicScreen21" type="video/mp4" src ="C:/Users/Guest/Downloads/sky.mp4" width ="300px" height="190px" preload="none">        
+                </video></div>
+                <img class="spiderman spiderMan16" id="spiderMan16" src="C:/Users/Guest/Downloads/spidermman.GIF">  
+               <div class="col-xs-3 col-md-4" id = "parentDiv17"><span class="label label-primary lab">17</span><br><video class="comicScreen comicScreen22" src="C:/Users/Guest/Downloads/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan17" id="spiderMan17" src="C:/Users/Guest/Downloads/spidermanLand.PNG">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv18"><span class="label label-primary lab">18</span><br><video class="comicScreen23 comicScreen" src ="C:/Users/Guest/Downloads/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan18" id="spiderMan18" src="C:/Users/Guest/Downloads/spidermanLand.PNG"></div>             
+               <div class="clearfix visible-md-block"></div>
+             </div>
+             <div class="row" style="position:relative; margin-top:225px;">
+              <div class="col-sm-8 col-md-6" id="parentDiv19"><span class="label label-primary lab">19</span><video class="comicScreen24 comicScreen" width = "450px" height="250px" preload="none">
+                <source id = "min1" src="C:/Users/Guest/Downloads/treenbridge.mp4"></video><img class="spiderman spiderMan19" id="spiderMan19" src="C:/Users/Guest/Downloads/spideynewGeo.PNG">
+              </div>
+              <div class="col-sm-4 col-md-6" id="parentDiv20"><span class="label label-primary lab">20</span><video class="comicScreen25 comicScreen" width="450px" height="250px" src ="C:/Users/Guest/Downloads/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderMan20" id="spiderMan20" src="C:/Users/Guest/Downloads/spidermanLDOL.GIF"/></div>        
+             </div>
+             <div class="row" style="position:relative; margin-top:285px;">
+              <div class="col-sm-8 col-md-6" id="parentDiv21"><span class="label label-primary lab">21</span><video class="comicScreen26 comicScreen" width = "450px" height="250px" preload="none">
+                <source src="C:/Users/Guest/Downloads/treenbridge.mp4"></video><img class="spiderman spiderMan21" id="spiderMan21" src="C:/Users/Guest/Downloads/spideynewGeo.PNG">
+              </div>
+              <div class="col-sm-4 col-md-6" id="parentDiv22"><span class="label label-primary lab">22</span><video class="comicScreen27 comicScreen" width="450px" height="250px" src ="C:/Users/Guest/Downloads/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderMan22" id="spiderMan22" src="C:/Users/Guest/Downloads/spidermanLDOL.GIF"/></div>        
+             </div>
+             <div class="row" style="position:relative; margin-top:300px;" height ="400px">
+               <div class="col-xs-3 col-md-4" id="parentDiv23">
+                <span class="label label-primary lab">23</span><br> 
+                <video class ="comicScreen comicScreen28" type="video/mp4" src ="C:/Users/Guest/Downloads/sky.mp4" width ="300px" height="190px" preload="none">        
+                </video><img class="spiderman spiderMan23" id="spiderMan23" src="C:/Users/Guest/Downloads/spidermman.GIF"> 
+               </div> 
+               <div class="col-xs-3 col-md-4" id = "parentDiv24"><span class="label label-primary lab">24</span><br><video class="comicScreen comicScreen29" src="C:/Users/Guest/Downloads/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan24" id="spiderMan24" src="C:/Users/Guest/Downloads/spidermanLand.PNG">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv25"><span class="label label-primary lab">25</span><br><video class="comicScreen30 comicScreen" src ="C:/Users/Guest/Downloads/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan25" id="spiderMan25" src="C:/Users/Guest/Downloads/spidermanLand.PNG"></div>             
+               <div class="clearfix visible-md-block"></div>
+             </div>
+             <div class="row" style="position:relative; margin-top:245px;">
+              <div class="col-sm-8 col-md-6" id="parentDiv26"><span class="label label-primary lab">26</span><video class="comicScreen31 comicScreen" width = "450px" height="250px" preload="none">
+                <source src="C:/Users/Guest/Downloads/treenbridge.mp4"></video><img class="spiderman spiderMan26" id="spiderMan26" src="C:/Users/Guest/Downloads/spideynewGeo.PNG">
+              </div>
+              <div class="col-sm-4 col-md-6" id="parentDiv27"><span class="label label-primary lab">27</span><video class="comicScreen32 comicScreen" width="450px" height="250px" src ="C:/Users/Guest/Downloads/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderMan27" id="spiderMan27" src="C:/Users/Guest/Downloads/spidermanLDOL.GIF"/></div>        
+             </div>
+             <div class="row" style="position:relative; margin-top:300px;" height ="400px">
+               <div class="col-xs-3 col-md-4" id="parentDiv28">
+                <span class="label label-primary lab">28</span><br> 
+                <video class ="comicScreen comicScreen33" type="video/mp4" src ="C:/Users/Guest/Downloads/sky.mp4" width ="300px" height="190px" preload="none">        
+                </video><img class="spiderman spiderMan28" id="spiderMan28" src="C:/Users/Guest/Downloads/spidermman.GIF">  
+               </div>
+               <div class="col-xs-3 col-md-4" id = "parentDiv29"><span class="label label-primary lab">29</span><br><video class="comicScreen comicScreen34" src="C:/Users/Guest/Downloads/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan29" id="spiderMan29" src="C:/Users/Guest/Downloads/spidermanLand.PNG">
+               </div>
+               <div class="col-xs-6 col-md-4" id="parentDiv30"><span class="label label-primary lab">30</span><br><video class="comicScreen34 comicScreen" src ="C:/Users/Guest/Downloads/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan30" id="spiderMan30" src="C:/Users/Guest/Downloads/spidermanLand.PNG"></div>             
+               <div class="clearfix visible-md-block"></div>
+             </div>
+       </div> 
+       <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+       <script src="https://maps.googleapis.com/maps/api/js"></script>
+       <script src = "realityComic.js"></script>  
+  </body>
+</html>
