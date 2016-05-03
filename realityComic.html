@@ -3,16 +3,18 @@
     <head> 
     	<meta charset="utf-8">
     	<meta name = "viewport" content = "width=device-width, initial-scale=1">
-    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">  
-      <link rel="stylesheet" type="text/css" href="assets/lib/css/main.css"> 
-       <script src ="assets/lib/js/modernizr.js"></script> 
+    	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->  
+         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="assets/lib/css/main.css"> 
+       <!--<script src ="assets/lib/js/modernizr.js"></script>-->
+       <script src="assets/lib/js/modern.js"></script>
     </head>
     <body id="body"> 
        <div class="container allScreens">
           <div class="row" height = "400px">
               <div class="col-xs-3 col-md-4" id="parentDiv1"><a href="#" id ="popover" data-toggle="popover" title="Archie Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
                 <span class="label label-primary lab">1</span> 
-                <video class ="comicScreen1" id="firstScreen" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none">        
+                <video class ="comicScreen1" id="firstScreen" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none" autoplay>        
                 </video></a></div>
                 <img class="spiderman spiderMan1" id="spiderMan1" src="../realityComic/assets/img/spidermman.GIF">
               <!--<div class="progress">
@@ -170,6 +172,10 @@
                <div class="clearfix visible-md-block"></div>
              </div>
        </div> 
+      
+         <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+ +       <script src="https://maps.googleapis.com/maps/api/js"></script>
+ +       <script src = "assets/lib/js/realityComic.js"></script>--> 
        <script data-main="assets/lib/js/common" src="assets/lib/js/require.js"></script>
   </body>
 </html>

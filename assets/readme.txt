@@ -1,0 +1,1 @@
+This is a comic that seeks to relate real life situations in their most authentic representation using familiar physical backdrops and scenes as themes and backgrund images. Pictures and videos are shown as at the date of capture and can be updated as wished

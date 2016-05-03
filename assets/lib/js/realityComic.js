@@ -1,4 +1,4 @@
-define([], function () { 
+define([''], function () { 
 	var
 	allScreens = document.querySelectorAll(".allScreens")[0],
 	secondScreen = document.getElementById("secondScreen"),
