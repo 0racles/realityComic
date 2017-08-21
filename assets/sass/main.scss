@@ -1,0 +1,68 @@
+@import "../components/partials/_variables";
+@import "../components/partials/_header";
+@import "../components/partials/_footer";
+
+.allScreens {
+	height : 100%;
+	display: $comic-flex;
+	flex-direction : column;
+	& .screen_row {
+		margin : 10px;
+		background : $comic-grey;	
+		height : 200px;
+		display : inherit;
+		flex-direction : row;
+	  & .sub_screens {
+	  		@extend .screen_row;
+			height : 90%;
+    		width : 33.3%;
+    		background : $comic-white;
+			}
+		& .screen_one {
+			order : 1;	 
+			}
+		& .screen_two {
+			order : 2;		
+			}
+		& .screen_three {
+			order : 3;	
+		}
+		& .screen_four {
+			order : 1;	
+			flex-grow :1;
+		}
+		& .screen_five {
+		order : 2;
+		flex-grow :1;
+		}
+		& .screen_six {
+			flex-grow : 1;	
+		}
+		& .screen_seven {
+			order : 1;	
+			flex-grow : 1;
+		}
+		& .screen_eight {
+			order : 2;	
+		}
+		& .screen_nine {
+			order : 3;	
+		}
+		video {
+			display: block;
+			position : absolute;
+			width :40px;
+			height:40px;
+		}
+		img {
+			display : block;
+			position : absolute;
+			width :40px;
+			height:40px;
+		}
+	}
+}
+
+.sub_screens:nth-of-child(3) {
+	max-height : $comic-height-lg;	
+}

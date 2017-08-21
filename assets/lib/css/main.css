@@ -1,7 +1,84 @@
-.words {position : absolute; z-index : 10; margin-top: 170px;} .words2 {position : absolute; z-index: 1; margin-top: 170px;} .Active {opacity:0.6; backgrouhd-color: "blue";  content:"Finished"; z-index:2;} .boldBorder {border:5px solid blue; padding:0;} .backGround {background-image: "C:/Users/Guest/Downloads/rainingDay.JPG"; background-repeat: no-repeat; background-size:cover;} 
+.allScreens {
+	height : 100%;
+	display: flex;
+	flex-direction : column;
+}
+
+.screen_row {
+	margin : 10px;
+	background : blue;	
+	height : 200px;
+	display : flex;
+	flex-direction : row;
+	
+}
+
+.sub_screens {
+	height : 90%;
+    margin : 10px;
+    width : 33.3%;
+    background : green;
+}
+
+.screen_one {
+	order : 1;	
+}
+
+.screen_two {
+	order : 2;		
+}
+
+.screen_three {
+	order : 3;	
+}
+
+.screen_four {
+	order : 1;	
+	flex-grow :1;
+}
+
+.screen_five {
+	order : 2;
+	flex-grow :1;
+}
+
+.screen_six {
+	flex-grow : 1;	
+
+}
+
+.screen_seven {
+	order : 1;	
+}
+
+.screen_eight {
+	order : 2;	
+}
+
+.screen_nine {
+	order : 3;	
+}
+
+video {
+	display: block;
+	position : absolute;
+	width :40px;
+	height:40px;
+
+}
+
+img {
+	display : block;
+	position : absolute;
+	width :40px;
+	height:40px;
+}
+
+
+/*.words {position : absolute; z-index : 10; margin-top: 170px;} .words2 {position : absolute; z-index: 1; margin-top: 170px;} .Active {opacity:0.6; backgrouhd-color: "blue";  content:"Finished"; z-index:2;} .boldBorder {border:5px solid blue; padding:0;} .backGround {background-image: "C:/Users/Guest/Downloads/rainingDay.JPG"; background-repeat: no-repeat; background-size:cover;} 
           .spiderMan1 {position:absolute; z-index: 1; left:100px; top:50px;} .comicScreen {z-index:0; position:absolute;} .spiderMan3 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan4 {position:absolute; z-index:1; left:280px;top:62px;} .spiderMan5 {position:absolute; z-index:1; top:101px; left:228px;} .spiderMan6 {position:absolute; z-index:2; left:220px; top:153px;}
            .spiderman7 {position:absolute; z-index:2; left:40; top:50px;} .spiderman8 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan9 {position:absolute; z-index:1; right:17px;top:42px;}
            .spiderMan10 {position:absolute; z-index:1; right:60px;top:33px;} .spiderMan11 {position:absolute; z-index:1; right:60px;top:33px;} #underImage {position : absolute; z-index:1; right:80px;top:5px;} #underImage2 {position : absolute; z-index:1; right:80px;top:5px;} #underImage3 {position : absolute; z-index:1; left:13px;top:80px;} #underImage4 {position : absolute; z-index:1; left:150px;top:35px;} #underImage5 {position : absolute; z-index:1; right:80px;top:95px;} 
             .spiderMan13 {position:absolute; z-index: 1; left:100px; top:50px;} .spiderMan14 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan15 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan16 {position:absolute; z-index: 1; left:100px; top:50px;} 
             .spiderMan17 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan18 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan19 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan20 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan21 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan22 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan23 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan24 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan25 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan26 {position:absolute; z-index:2; left:40; top:50px;} .spiderMan27 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan28 {position:absolute; z-index:1;left:100px; top:60px;} .spiderMan29 {position:absolute; z-index:1; left:360px;top:52px;} .spiderMan30 {position:absolute; z-index:1; left:360px;top:52px;}
-             .slideImage {position : absolute; top:10px; left:50px; z-index:1; padding:20px 20px 10px 100px;} #alertBox {padding:0px 45px 10px 5px;} #containerStyle {position:absolute; height:90px; width:950px; padding-top:40px; padding-right:450px;} #mapWrapper{position:absolute; height:180px; width:250px; z-index:1; padding-top:20px; left:0;}
+             .slideImage {position : absolute; top:10px; left:50px; z-index:1; padding:20px 20px 10px 100px;} #alertBox {padding:0px 45px 10px 5px;} #containerStyle {position:absolute; height:90px; width:950px; padding-top:40px; padding-right:450px;} #mapWrapper{position:absolute; height:180px; width:250px; z-index:1; padding-top:20px; left:0;}*/

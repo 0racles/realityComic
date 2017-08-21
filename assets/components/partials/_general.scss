@@ -1,0 +1,59 @@
+.allScreens {
+	height : 100%;
+	display: flex;
+	flex-direction : column;
+	&.screen_row {
+		margin : 10px;
+		background : blue;	
+		height : 200px;
+		display : flex;
+		flex-direction : row;
+		&.sub_screens {
+			height : 90%;
+    		margin : 10px;
+    		width : 33.3%;
+    		background : green;
+			}
+		&.screen_one {
+			order : 1;	
+			}
+		&.screen_two {
+			order : 2;		
+			}
+		&.screen_three {
+			order : 3;	
+		}
+		&.screen_four {
+			order : 1;	
+			flex-grow :1;
+		}
+		&.screen_five {
+		order : 2;
+		flex-grow :1;
+		}
+		&.screen_six {
+			flex-grow : 1;	
+		}
+		&.screen_seven {
+			order : 1;	
+		}
+		&.screen_eight {
+			order : 2;	
+		}
+		&.screen_nine {
+			order : 3;	
+		}
+		video {
+			display: block;
+			position : absolute;
+			width :40px;
+			height:40px;
+		}
+		img {
+			display : block;
+			position : absolute;
+			width :40px;
+			height:40px;
+		}
+	}
+}

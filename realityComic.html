@@ -3,43 +3,45 @@
     <head> 
     	<meta charset="utf-8">
     	<meta name = "viewport" content = "width=device-width, initial-scale=1">
-    	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->  
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">  
          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-         <link rel="stylesheet" type="text/css" href="assets/lib/css/main.css"> 
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.com/libraries/normalize">
+         <link rel="stylesheet" type="text/css" href="assets/css/main.css"> 
        <!--<script src ="assets/lib/js/modernizr.js"></script>-->
        <script src="assets/lib/js/modern.js"></script>
     </head>
     <body id="body"> 
        <div class="container allScreens">
-          <div class="row" height = "400px">
-              <div class="col-xs-3 col-md-4" id="parentDiv1"><a href="#" id ="popover" data-toggle="popover" title="Archie Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
+          <div class="screen_row">
+              <div id="parentDiv1" class="sub_screens screen_one"><!--<a href="#" id ="popover" data-toggle="popover" title="Archie Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
                 <span class="label label-primary lab">1</span> 
-                <video class ="comicScreen1" id="firstScreen" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none" autoplay>        
-                </video></a></div>
-                <img class="spiderman spiderMan1" id="spiderMan1" src="../realityComic/assets/img/spidermman.GIF">
+                <video class ="comicScreen1" id="firstScreen" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" preload="none" autoplay>        
+                </video></a>
+                <img class="spiderman spiderMan1" id="spiderMan1" src="../realityComic/assets/img/spidermman.GIF">-->
+                </div>
               <!--<div class="progress">
                   <div class="progress-bar progress-bar-success"  role="progressbar" aria-valuemin = "0" aria-veluemax = "100" aria-valuenow="20" style="width : 10%"></div>
               </div>-->     
-              <div class="col-xs-3 col-md-4" id = "popover2"><span class="label label-primary lab" id="label2">2</span><video class="comicScreen2" id= "secondScreen" src="../realityComic/assets/media/darksky.mp4" width ="300px" height="190px" preload="none"></video></div>
-              <div class="col-xs-6 col-md-4" id="parentDiv3"><span class="label label-primary lab">3</span><video class="comicScreen3" id="thirdScreen" src ="../realityComic/assets/media/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan3" id="spiderMan3" src="../realityComic/assets/img/spidermanLand.PNG"></div>             
+              <div id = "popover2" class="sub_screens screen_two"><!--<span class="label label-primary lab" id="label2">2</span><video class="comicScreen2" id= "secondScreen" src="../realityComic/assets/media/darksky.mp4" preload="none"></video>--></div>
+              <div id="parentDiv3" class="sub_screens screen_three"><!--<span class="label label-primary lab">3</span><video class="comicScreen3" id="thirdScreen" src ="../realityComic/assets/media/unilagLagoon.mp4" preload="none"></video><img class="spiderman spiderMan3" id="spiderMan3" src="../realityComic/assets/img/spidermanLand.PNG">--></div>             
                <!--<div class="clearfix visible-md-block"></div>-->
           </div>
-          <div class="row">
-              <div class="col-sm-8 col-md-6" id="parentDiv4"><span class="label label-primary lab">4</span><br><video class="comicScreen comicScreen4" width = "450px" height="250px" id="fourthScreen" preload="none">
+          <div class="screen_row">
+              <div id="parentDiv4" class="sub_screens screen_four"><!--<span class="label label-primary lab">4</span><br><video class="comicScreen comicScreen4" id="fourthScreen" preload="none">
                    <source id = "min1" src="../realityComic/assets/media/unilagBridge.mp4">
-              </video><img class="spiderman spiderMan4" id="spiderMan4" src="../realityComic/assets/img/spidermanBack.PNG"></div>
-              <div class="col-sm-4 col-md-6" id="parentDiv5"><span class="label label-primary lab">5</span><video class="comicScreen5" width="450px" height="250px" src ="../realityComic/assets/media/unilagBnL.mp4" preload="none"></video><img class="spiderman spiderMan5" id="spiderMan5" src="../realityComic/assets/img/spiderStand.PNG"></div>           
+              </video><img class="spiderman spiderMan4" id="spiderMan4" src="../realityComic/assets/img/spidermanBack.PNG">--></div>
+              <div  id="parentDiv5" class="sub_screens screen_five"><!--<span class="label label-primary lab">5</span><video class="comicScreen5" src ="../realityComic/assets/media/unilagBnL.mp4" preload="none"></video><img class="spiderman spiderMan5" id="spiderMan5" src="../realityComic/assets/img/spiderStand.PNG">--></div>           
           </div>       
-          <div class="row">
-             <div class="col-xs-12 col-md-12 col-md-offset-2" id="parentDiv6"><span class="label label-primary lab">6</span><video class="comicScreen6 comicScreen" src ="../realityComic/assets/media/sky.mp4" preload="none"></video>
+          <div class="screen_row">
+             <div id="parentDiv6" class="sub_screens screen_six"><!--<span class="label label-primary lab">6</span><video class="comicScreen6 comicScreen" src ="../realityComic/assets/media/sky.mp4" preload="none"></video>
                 <img class="spiderman spiderMan6" id="spiderMan6" src="../realityComic/assets/img/Spidersense.PNG">
-                <div class="carousel" data-ride="carousel" id="myCarousel">
+                <div class="carousel" data-ride="carousel" id="myCarousel">-->
                     <!--<ol class="carousel-indicators">-->
                        <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
                        <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
                        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
                     <!--</ol>-->
-                    <div class="carousel-inner" role="listbox">
+                   <!-- <div class="carousel-inner" role="listbox">
                        <div class="item active slideImage">
                           <img src="../realityComic/assets/img/spider.PNG" class="spiderman" id="carousel1">
                        </div>  
@@ -66,11 +68,11 @@
                             <span class="glyphicon glyphicon-warning-sign" id="alertBox"> Alert! problem connecting to web host.....</span> 
                           </div>
                        </div> 
-                    </div>
-                </div>       
+                    </div>-->
+                </div>      
              </div>
-             <div class="row" style="position:relative; margin-top:365px;">
-              <div class="col-sm-8 col-md-6" id="parentDiv7"><span class="label label-primary lab" id="parentDiv7">7</span><video class="comicScreen7 comicScreen" width = "450px" height="250px" id="seventhScreen" preload="none">
+             <div class="screen_row">
+              <div id="parentDiv7" class="sub_screens screen_seven"><!--<span class="label label-primary lab" id="parentDiv7">7</span><video class="comicScreen7 comicScreen" id="seventhScreen" preload="none">
                 <source id = "min1" src="../realityComic/assets/media/treenbridge.mp4"></video><a href="#modal" data-toggle="modal"><img class="spiderman spiderman7" id="spiderMan7" src="../realityComic/assets/img/spideynewGeo.PNG"></a>
                   <div class="container">
                       <div class="modal fade" id="modal" role="dialog">
@@ -78,101 +80,40 @@
                               <div class="modal-content" id="mapWrapper"></div>  
                           </div>
                       </div>
-                  </div> 
+                  </div> -->
               </div>
-              <div class="col-sm-4 col-md-6" id="parentDiv8"><span class="label label-primary lab" id="parentDiv8">8</span><video class="comicScreen8 comicScreen" id="eightScreen" width="450px" height="250px" src ="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderman8" id="spiderMan8" src="../realityComic/assets/img/spidermanLDOL.GIF"/></div>           
-             </div>                      
-             <div class="row" style="position:relative; margin-top:305px;" height ="400px">
-               <div class="col-xs-3 col-md-4" id="parentDiv09"><a href="#" id ="parentDiv9" data-toggle="popover" title="Spiderman Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
+              <div  id="parentDiv8" class="sub_screens screen_eight"><!--<span class="label label-primary lab" id="parentDiv8">8</span><video class="comicScreen8 comicScreen" id="eightScreen" src="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderman8" id="spiderMan8" src="../realityComic/assets/img/spidermanLDOL.GIF"/>--></div>           
+             </div>                        
+             <div class="screen_row">
+               <div id="parentDiv9" class="sub_screens screen_nine"><!--<a href="#" id ="parentDiv9" data-toggle="popover" title="Spiderman Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
                 <span class="label label-primary lab">9</span> 
-                <video class ="comicScreen9" id="ninthScreen" type="video/mp4" src ="../realityComic/assets/media/unilagTreenSky.mp4" width ="300px" height="190px" preload="none">        
+                <video class ="comicScreen9" id="ninthScreen" type="video/mp4" src ="../realityComic/assets/media/unilagTreenSky.mp4" preload="none">        
                 </video></a>
-                <img class="spiderman spiderMan9" id="spiderMan9" src="../realityComic/assets/img/spthinking.GIF">
+                <img class="spiderman spiderMan9" id="spiderMan9" src="../realityComic/assets/img/spthinking.GIF">-->
                </div>       
-               <div class="col-xs-3 col-md-4" id="parentDiv10"><span class="label label-primary lab" id="label10">10</span><video class="comicScreen10" id= "tenthScreen" src="../realityComic/assets/media/unilagGarden.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan10" id="spiderMan10" src="../realityComic/assets/img/smNetrelease.PNG">
+               <div  id="parentDiv10" class="sub_screens screen_ten"><!--<span class="label label-primary lab" id="label10">10</span><video class="comicScreen10" id= "tenthScreen" src="../realityComic/assets/media/unilagGarden.mp4" preload="none"></video><img class="spiderman spiderMan10" id="spiderMan10" src="../realityComic/assets/img/smNetrelease.PNG">-->
                </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicscreen comicScreen11" id="elevenScreen" src ="../realityComic/assets/media/unilagGarden.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="spiderMan11" src="../realityComic/assets/img/smDangling.GIF">
+               <div  id="parentDiv12" class="sub_screens screen_eleven"><!--<span class="label label-primary lab">11</span><video class="comicscreen comicScreen11" id="elevenScreen" src ="../realityComic/assets/media/unilagGarden.mp4" preload="none"></video><img class="spiderman spiderMan11" id="spiderMan11" src="../realityComic/assets/img/smDangling.GIF">-->
                </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen12" id="underScreen" src ="../realityComic/assets/media/unilagTreenSky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage" src="../realityComic/assets/img/spiderRopeFly.GIF">
-               </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen13" id="underScreen2" src ="../realityComic/assets/media/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage2" src="../realityComic/assets/img/spidermanrope2.GIF">
-               </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen14" id="underScreen3" src ="../realityComic/assets/media/blueSkynTree.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage3" src="../realityComic/assets/img/spSidePose.GIF">
-               </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen15" id="underScreen4" src ="../realityComic/assets/media/yaba.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage4" src="../realityComic/assets/img/spidermanhanging.GIF">
-               </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv11"><span class="label label-primary lab">11</span><video class="comicScreen16" id="underScreen5" src ="../realityComic/assets/media/sunset.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan11" id="underImage5" src="../realityComic/assets/img/spOpenArms.GIF">
-               </div>
-             </div>
-             <div class="row">
-               <div class="col-xs-12 col-md-12 col-md-offset-2" id="parentDiv12"><span class="label label-primary lab">12</span><br><video class="comicScreen17 comicScreen" src ="../realityComic/assets/media/sky.mp4" preload="none"></video>
-                <img class="spiderman spiderMan12" id="spiderMan12" src="../realityComic/assets/img/Spidersense.PNG">
-               </div>
-             </div>
-             <div class="row" style="position:relative; margin-top:200px;" height ="400px">
-               <div class="col-xs-3 col-md-4" id="parentDiv13">
-                <span class="label label-primary lab">13</span><br> 
-                <video class ="comicScreen comicScreen18" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none">        
-                </video></div>
-                <img class="spiderman spiderMan13" id="spiderMan13" src="../realityComic/assets/img/spidermman.GIF">  
-               <div class="col-xs-3 col-md-4" id = "parentDiv14"><span class="label label-primary lab">14</span><br><video class="comicScreen comicScreen19" src="../realityComic/assets/media/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan14" id="spiderMan14" src="../realityComic/assets/img/spidermanLand.PNG">
-               </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv15"><span class="label label-primary lab">15</span><br><video class="comicScreen20 comicScreen" src ="../realityComic/assets/media/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan15" id="spiderMan15" src="../realityComic/assets/img/spidermanLand.PNG"></div>             
-               <div class="clearfix visible-md-block"></div>
-             </div>
-             <div class="row" style="position:relative; margin-top:200px;" height ="400px">
-               <div class="col-xs-3 col-md-4" id="parentDiv16">
-                <span class="label label-primary lab">16</span><br> 
-                <video class ="comicScreen comicScreen21" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none">        
-                </video></div>
-                <img class="spiderman spiderMan16" id="spiderMan16" src="../realityComic/assets/img/spidermman.GIF">  
-               <div class="col-xs-3 col-md-4" id = "parentDiv17"><span class="label label-primary lab">17</span><br><video class="comicScreen comicScreen22" src="../realityComic/assets/media/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan17" id="spiderMan17" src="../realityComic/assets/img/spidermanLand.PNG">
-               </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv18"><span class="label label-primary lab">18</span><br><video class="comicScreen23 comicScreen" src ="../realityComic/assets/media/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan18" id="spiderMan18" src="../realityComic/assets/img/spidermanLand.PNG"></div>             
-               <div class="clearfix visible-md-block"></div>
-             </div>
-             <div class="row" style="position:relative; margin-top:225px;">
-              <div class="col-sm-8 col-md-6" id="parentDiv19"><span class="label label-primary lab">19</span><video class="comicScreen24 comicScreen" width = "450px" height="250px" preload="none">
-                <source id = "min1" src="../realityComic/assets/media/treenbridge.mp4"></video><img class="spiderman spiderMan19" id="spiderMan19" src="../realityComic/assets/img/spideynewGeo.PNG">
               </div>
-              <div class="col-sm-4 col-md-6" id="parentDiv20"><span class="label label-primary lab">20</span><video class="comicScreen25 comicScreen" width="450px" height="250px" src ="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderMan20" id="spiderMan20" src="../realityComic/assets/img/spidermanLDOL.GIF"/></div>        
-             </div>
-             <div class="row" style="position:relative; margin-top:285px;">
-              <div class="col-sm-8 col-md-6" id="parentDiv21"><span class="label label-primary lab">21</span><video class="comicScreen26 comicScreen" width = "450px" height="250px" preload="none">
-                <source src="../realityComic/assets/media/treenbridge.mp4"></video><img class="spiderman spiderMan21" id="spiderMan21" src="../realityComic/assets/img/spideynewGeo.PNG">
+              <div class="screen_row">
+               <div  id="parentDiv13" class="sub_screens screen_twelve"><!--<span class="label label-primary lab">11</span><video class="comicScreen12" id="underScreen" src ="../realityComic/assets/media/unilagTreenSky.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage" src="../realityComic/assets/img/spiderRopeFly.GIF">-->
+               </div>
+               <div  id="parentDiv14" class="sub_screens screen_thirteen"><!--<span class="label label-primary lab">11</span><video class="comicScreen13" id="underScreen2" src ="../realityComic/assets/media/unilagLagoon.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage2" src="../realityComic/assets/img/spidermanrope2.GIF">-->
+               </div>
+               <div  id="parentDiv15" class="sub_screens screen_fourteen"><!--<span class="label label-primary lab">11</span><video class="comicScreen14" id="underScreen3" src ="../realityComic/assets/media/blueSkynTree.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage3" src="../realityComic/assets/img/spSidePose.GIF--> </div>
               </div>
-              <div class="col-sm-4 col-md-6" id="parentDiv22"><span class="label label-primary lab">22</span><video class="comicScreen27 comicScreen" width="450px" height="250px" src ="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderMan22" id="spiderMan22" src="../realityComic/assets/img/spidermanLDOL.GIF"/></div>        
-             </div>
-             <div class="row" style="position:relative; margin-top:300px;" height ="400px">
-               <div class="col-xs-3 col-md-4" id="parentDiv23">
-                <span class="label label-primary lab">23</span><br> 
-                <video class ="comicScreen comicScreen28" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none">        
-                </video><img class="spiderman spiderMan23" id="spiderMan23" src="../realityComic/assets/img/spidermman.GIF"> 
-               </div> 
-               <div class="col-xs-3 col-md-4" id = "parentDiv24"><span class="label label-primary lab">24</span><br><video class="comicScreen comicScreen29" src="../realityComic/assets/media/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan24" id="spiderMan24" src="../realityComic/assets/img/spidermanLand.PNG">
+              <div class="screen_row">
+               <div  id="parentDiv16" class="sub_screens screen_fifteen"><!--<span class="label label-primary lab">11</span><video class="comicScreen15" id="underScreen4" src ="../realityComic/assets/media/yaba.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage4" src="../realityComic/assets/img/spidermanhanging.GIF">-->
                </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv25"><span class="label label-primary lab">25</span><br><video class="comicScreen30 comicScreen" src ="../realityComic/assets/media/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan25" id="spiderMan25" src="../realityComic/assets/img/spidermanLand.PNG"></div>             
-               <div class="clearfix visible-md-block"></div>
-             </div>
-             <div class="row" style="position:relative; margin-top:245px;">
-              <div class="col-sm-8 col-md-6" id="parentDiv26"><span class="label label-primary lab">26</span><video class="comicScreen31 comicScreen" width = "450px" height="250px" preload="none">
-                <source src="../realityComic/assets/media/treenbridge.mp4"></video><img class="spiderman spiderMan26" id="spiderMan26" src="../realityComic/assets/img/spideynewGeo.PNG">
-              </div>
-              <div class="col-sm-4 col-md-6" id="parentDiv27"><span class="label label-primary lab">27</span><video class="comicScreen32 comicScreen" width="450px" height="250px" src ="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderMan27" id="spiderMan27" src="../realityComic/assets/img/spidermanLDOL.GIF"/></div>        
-             </div>
-             <div class="row" style="position:relative; margin-top:300px;" height ="400px">
-               <div class="col-xs-3 col-md-4" id="parentDiv28">
-                <span class="label label-primary lab">28</span><br> 
-                <video class ="comicScreen comicScreen33" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" width ="300px" height="190px" preload="none">        
-                </video><img class="spiderman spiderMan28" id="spiderMan28" src="../realityComic/assets/img/spidermman.GIF">  
+               <div  id="parentDiv17" class="sub_screens screen_sixteen"><!--<span class="label label-primary lab">11</span><video class="comicScreen16" id="underScreen5" src ="../realityComic/assets/media/sunset.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage5" src="../realityComic/assets/img/spOpenArms.GIF">-->
                </div>
-               <div class="col-xs-3 col-md-4" id = "parentDiv29"><span class="label label-primary lab">29</span><br><video class="comicScreen comicScreen34" src="../realityComic/assets/media/darksky.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan29" id="spiderMan29" src="../realityComic/assets/img/spidermanLand.PNG">
+               <div id="parentDiv18" class="sub_screens screen_seventeen"><!--<span class="label label-primary lab">12</span><br><video class="comicScreen17 comicScreen" src ="../realityComic/assets/media/sky.mp4" preload="none"></video>
+                <img class="spiderman spiderMan12" id="spiderMan12" src="../realityComic/assets/img/Spidersense.PNG">-->
                </div>
-               <div class="col-xs-6 col-md-4" id="parentDiv30"><span class="label label-primary lab">30</span><br><video class="comicScreen34 comicScreen" src ="../realityComic/assets/media/unilagLagoon.mp4" width ="300px" height="190px" preload="none"></video><img class="spiderman spiderMan30" id="spiderMan30" src="../realityComic/assets/img/spidermanLand.PNG"></div>             
-               <div class="clearfix visible-md-block"></div>
-             </div>
+              </div>    
        </div> 
-      
+    
          <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
  +       <script src="https://maps.googleapis.com/maps/api/js"></script>
  +       <script src = "assets/lib/js/realityComic.js"></script>--> 
