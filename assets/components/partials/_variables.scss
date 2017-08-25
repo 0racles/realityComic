@@ -1,7 +1,40 @@
-$comic-green : green;
-$comic-grey : #ddd;
-$comic-border : 5px solid #000;
-$comic-white : #fff;
+/* bg colours */
+$pallete-bg-white : #fff;
+$pallete-bg-green : green;
+$pallete-bg-grey : #ddd;
+
+/* display rules */
 $comic-flex : flex;
+$comic-inline : inline;
+$comic-block : block;
+$comic-inline-block : inline-block;
+
+
+/* borders & margins */
+$comic-border : 5px solid #000;
+$comic-margin: 10px;
+
+/* width and height */
 $comic-height-lg : 300px;
 $comic-height-sm : 200px;
+$comic-screen-md : 64%;
+$comic-screen-lg : 100%;
+$comic-screen-sm : 31%;
+$comic-screen-xs : 16.5%;
+
+/* position context */
+$comic-static : static;
+$comic-fixed : fixed;
+$comic-relative : relative;
+$comic-absolute : absolute;
+
+/*mixins*/
+@mixin video-settings ($height : 100%, $zIndex: 1, $top: 0, $right : 0, $bottom : 10px, $left : 0) {
+	height : $height;
+	top : $top;
+	right : $right;
+	bottom : $bottom;
+	left : $left;
+	z-index : $zIndex;
+}
+

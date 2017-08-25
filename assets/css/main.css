@@ -1,50 +1,56 @@
+/* bg colours */
+/* display rules */
+/* borders & margins */
+/* width and height */
+/* position context */
+/*mixins*/
 .allScreens {
   height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column; }
-  .allScreens .screen_row, .allScreens .screen_row .sub_screens {
-    margin: 10px;
-    background: #ddd;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content : space-around;*/
+  /*& .screen_row {
+  	margin : 10px;
+  	background : $comic-grey;	
+  	height : 200px;
+  	display : inherit;
+  	flex-direction : row;
+  	flex-wrap: nowrap;*/ }
+  .allScreens .sub_screens {
+    position: relative;
     height: 200px;
-    display: inherit;
-    flex-direction: row; }
-    .allScreens .screen_row .sub_screens {
-      height: 90%;
-      width: 33.3%;
-      background: #fff; }
-    .allScreens .screen_row .screen_one {
-      order: 1; }
-    .allScreens .screen_row .screen_two {
-      order: 2; }
-    .allScreens .screen_row .screen_three {
-      order: 3; }
-    .allScreens .screen_row .screen_four {
-      order: 1;
-      flex-grow: 1; }
-    .allScreens .screen_row .screen_five {
-      order: 2;
-      flex-grow: 1; }
-    .allScreens .screen_row .screen_six {
-      flex-grow: 1; }
-    .allScreens .screen_row .screen_seven {
-      order: 1;
-      flex-grow: 1; }
-    .allScreens .screen_row .screen_eight {
-      order: 2; }
-    .allScreens .screen_row .screen_nine {
-      order: 3; }
-    .allScreens .screen_row video, .allScreens .screen_row .sub_screens video {
+    max-height: 200px;
+    width: 31%;
+    background: #ddd;
+    margin: 10px;
+    flex-grow: 1;
+    /*&:nth-child(4n + 6) {
+    	max-height : $comic-height-lg;
+    	height : $comic-height-lg;
+    }*/ }
+    .allScreens .sub_screens:nth-child(4n + 6) {
+      max-height: 300px;
+      height: 300px;
+      width: 64%;
+      background: #ddd; }
+    .allScreens .sub_screens video {
+      display: block;
+      position: absolute;
+      max-height: 300px;
+      max-width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 10px;
+      left: 0;
+      z-index: 1; }
+    .allScreens .sub_screens img {
       display: block;
       position: absolute;
       width: 40px;
-      height: 40px; }
-    .allScreens .screen_row img, .allScreens .screen_row .sub_screens img {
-      display: block;
-      position: absolute;
-      width: 40px;
-      height: 40px; }
-
-.sub_screens:nth-of-child(3) {
-  max-height: 300px; }
+      height: 40px;
+      top: 0; }
 
 /*# sourceMappingURL=main.css.map */

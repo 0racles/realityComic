@@ -4,65 +4,80 @@
 
 .allScreens {
 	height : 100%;
+	width : $comic-screen-lg;
 	display: $comic-flex;
-	flex-direction : column;
-	& .screen_row {
+	flex-direction : row;
+	flex-wrap : wrap;
+	/*justify-content : space-around;*/
+	/*& .screen_row {
 		margin : 10px;
 		background : $comic-grey;	
 		height : 200px;
 		display : inherit;
 		flex-direction : row;
+		flex-wrap: nowrap;*/
 	  & .sub_screens {
-	  		@extend .screen_row;
-			height : 90%;
-    		width : 33.3%;
-    		background : $comic-white;
+	  		position : $comic-relative;
+			height : $comic-height-sm;
+			max-height: $comic-height-sm;
+    		width : $comic-screen-sm;
+    		background : $pallete-bg-grey;
+    		margin : $comic-margin;
+    		flex-grow:1;
+    		   &:nth-child(4n + 6) {
+					max-height : $comic-height-lg;
+					height : $comic-height-lg;
+					width : $comic-screen-md;	
+					background : $pallete-bg-grey;
+				}
+				/*&:nth-child(4n + 6) {
+					max-height : $comic-height-lg;
+					height : $comic-height-lg;
+				}*/
+			video {
+			display: $comic-block;
+			position : $comic-absolute;
+			max-height: $comic-height-lg;
+			max-width: $comic-screen-lg;
+			@include video-settings;
+		}
+			img {
+			display : $comic-block;
+			position : $comic-absolute;
+			width :40px;
+			height:40px;
+			top:0;
+		}
 			}
 		& .screen_one {
-			order : 1;	 
+			 		 
 			}
 		& .screen_two {
-			order : 2;		
+			 		
 			}
 		& .screen_three {
-			order : 3;	
+			 
 		}
 		& .screen_four {
-			order : 1;	
-			flex-grow :1;
+			 	
+
 		}
 		& .screen_five {
-		order : 2;
-		flex-grow :1;
+		 
 		}
 		& .screen_six {
-			flex-grow : 1;	
+			 		
 		}
 		& .screen_seven {
-			order : 1;	
-			flex-grow : 1;
+			 	
+	
 		}
 		& .screen_eight {
-			order : 2;	
+			 	
 		}
 		& .screen_nine {
-			order : 3;	
+			 	
 		}
-		video {
-			display: block;
-			position : absolute;
-			width :40px;
-			height:40px;
-		}
-		img {
-			display : block;
-			position : absolute;
-			width :40px;
-			height:40px;
-		}
-	}
+		
 }
 
-.sub_screens:nth-of-child(3) {
-	max-height : $comic-height-lg;	
-}
