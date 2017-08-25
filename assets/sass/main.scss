@@ -2,51 +2,48 @@
 @import "../components/partials/_header";
 @import "../components/partials/_footer";
 
+
 .allScreens {
 	height : 100%;
 	width : $comic-screen-lg;
 	display: $comic-flex;
 	flex-direction : row;
 	flex-wrap : wrap;
-	/*justify-content : space-around;*/
-	/*& .screen_row {
-		margin : 10px;
-		background : $comic-grey;	
-		height : 200px;
-		display : inherit;
-		flex-direction : row;
-		flex-wrap: nowrap;*/
 	  & .sub_screens {
 	  		position : $comic-relative;
-			height : $comic-height-sm;
-			max-height: $comic-height-sm;
+			height : $comic-height-lg;
+			max-height: $comic-height-lg;
     		width : $comic-screen-sm;
     		background : $pallete-bg-grey;
     		margin : $comic-margin;
     		flex-grow:1;
+    			span {
+    				display : $comic-block;
+    				position : $comic-relative;
+    				z-index : $z-limit;
+    				@include number-tags;
+    			}
     		   &:nth-child(4n + 6) {
 					max-height : $comic-height-lg;
 					height : $comic-height-lg;
 					width : $comic-screen-md;	
 					background : $pallete-bg-grey;
 				}
-				/*&:nth-child(4n + 6) {
+				&:nth-child(4n + 7) {
 					max-height : $comic-height-lg;
 					height : $comic-height-lg;
-				}*/
+				}
+			@media screen and ($maxWidth : $target-width-md) {
+    			width : $mob-screen-lg;
+    		}
 			video {
 			display: $comic-block;
 			position : $comic-absolute;
-			max-height: $comic-height-lg;
-			max-width: $comic-screen-lg;
+			flex-grow : 1;
 			@include video-settings;
 		}
 			img {
-			display : $comic-block;
-			position : $comic-absolute;
-			width :40px;
-			height:40px;
-			top:0;
+				@include img-settings; 
 		}
 			}
 		& .screen_one {

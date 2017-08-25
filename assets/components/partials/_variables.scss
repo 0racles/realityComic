@@ -1,20 +1,20 @@
-/* bg colours */
+// ----------------------------------------------------- bg colours -------------------------------------------------------- 
 $pallete-bg-white : #fff;
 $pallete-bg-green : green;
 $pallete-bg-grey : #ddd;
 
-/* display rules */
+// ------------------------------------------------------ display rules ----------------------------------------------------
 $comic-flex : flex;
 $comic-inline : inline;
 $comic-block : block;
 $comic-inline-block : inline-block;
 
 
-/* borders & margins */
+// ------------------------------------------------------ borders & margins -------------------------------------------------- 
 $comic-border : 5px solid #000;
 $comic-margin: 10px;
 
-/* width and height */
+// ------------------------------------------------------ width and height ---------------------------------------------------
 $comic-height-lg : 300px;
 $comic-height-sm : 200px;
 $comic-screen-md : 64%;
@@ -22,15 +22,30 @@ $comic-screen-lg : 100%;
 $comic-screen-sm : 31%;
 $comic-screen-xs : 16.5%;
 
-/* position context */
+$mob-screen-lg : 80%;
+$mob-screen-md :50%;
+$mob-screen-sm : 30%;
+
+//------------------------------------------------------- position context ---------------------------------------------------
 $comic-static : static;
 $comic-fixed : fixed;
 $comic-relative : relative;
 $comic-absolute : absolute;
 
-/*mixins*/
-@mixin video-settings ($height : 100%, $zIndex: 1, $top: 0, $right : 0, $bottom : 10px, $left : 0) {
+$z-limit : 10;
+$z-one : 1;
+$z-two : 2;
+$z-three : 3;
+$z-four : 4;
+$z-five : 5;
+
+// ---------------------------------------------------- mixins ----------------------------------------------------------------
+
+@mixin video-settings ($maxHeight: 100%, $height : 100%, $maxWidth: 100%, $width:100%, $zIndex: 1, $top: 0, $right : 0, $bottom : 10px, $left : 0) {
+	max-height: $maxHeight;
 	height : $height;
+	max-width: $maxWidth;
+	width : $width;
 	top : $top;
 	right : $right;
 	bottom : $bottom;
@@ -38,3 +53,26 @@ $comic-absolute : absolute;
 	z-index : $zIndex;
 }
 
+@mixin number-tags ($border-radius: 100%, $color : #fff, $width : 30px, $height : 30px, $padding : 10px 0px, $bg : #00cbaf) {
+	height : $height;
+	width : $width;
+	border-radius : $border-radius;
+	padding : $padding;
+	color : $color;
+	background : $bg;
+}
+
+@mixin img-settings ($blk : block, $abs : absolute, $wth : 1000px) {
+   display : $blk;
+   position : $abs;
+   width :$wth;
+
+}
+
+// --------------------------------------------------- media queries -------------------------------------------------------------- 
+
+$maxWidth : max-device-width;
+$target-width-xs : 320px;
+$target-width-sm : 414px;
+$target-width-md : 768px;
+$target-width-lg : 1200px;
