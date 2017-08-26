@@ -38,7 +38,6 @@
     		}
 			video {
 			display: $comic-block;
-			position : $comic-absolute;
 			flex-grow : 1;
 			@include video-settings;
 		}
@@ -78,3 +77,9 @@
 		
 }
 
+.well {
+	position : $comic-absolute;
+	top:0;
+	width : $comic-screen-lg;
+	z-index : $z-five;	
+}

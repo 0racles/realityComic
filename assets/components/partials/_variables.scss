@@ -41,7 +41,8 @@ $z-five : 5;
 
 // ---------------------------------------------------- mixins ----------------------------------------------------------------
 
-@mixin video-settings ($maxHeight: 100%, $height : 100%, $maxWidth: 100%, $width:100%, $zIndex: 1, $top: 0, $right : 0, $bottom : 10px, $left : 0) {
+@mixin video-settings ($pos : absolute, $maxHeight: 100%, $height : 100%, $maxWidth: 100%, $width:100%, $zIndex: 1, $top: 0, $right : 0, $bottom : 10px, $left : 0) {
+	position : $pos;
 	max-height: $maxHeight;
 	height : $height;
 	max-width: $maxWidth;
@@ -62,11 +63,11 @@ $z-five : 5;
 	background : $bg;
 }
 
-@mixin img-settings ($blk : block, $abs : absolute, $wth : 1000px) {
+@mixin img-settings ($blk : block, $abs : absolute, $wth : 300px, $zIndex : 10) {
    display : $blk;
    position : $abs;
    width :$wth;
-
+   z-index : $zIndex;
 }
 
 // --------------------------------------------------- media queries -------------------------------------------------------------- 
