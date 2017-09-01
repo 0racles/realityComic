@@ -10,8 +10,9 @@
        <!--<script src ="assets/lib/js/modernizr.js"></script>-->
        <script src="assets/lib/js/modern.js"></script>
     </head>
-    <body id="body"> 
-       <div class="container allScreens">
+    <body id="body" data-ng-app="mainApp"> 
+       <div class="container allScreens" data-ng-controller="mainController">
+                <h1> {{ title }} </h1>
                 <div id="parentDiv1" class="sub_screens screen_one"><a href="#" id ="popover" data-toggle="popover" title="Archie Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
                 <span class="label label-primary lab">1</span> 
                 <video class ="comicScreen1" id="firstScreen" type="video/mp4" src ="../realityComic/assets/media/sky.mp4" preload="none" autoplay>        
@@ -102,59 +103,59 @@
               </div>
 
               <div  id="parentDiv8" class="sub_screens screen_eight">
-                  <!--<span class="label label-primary lab" id="parentDiv8">8</span>
-                  <video class="comicScreen8 comicScreen" id="eightScreen" src="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderman8" id="spiderMan8" src="../realityComic/assets/img/spidermanLDOL.GIF"/>-->  
+                  <span class="label label-primary lab" id="parentDiv8">8</span>
+                  <video class="comicScreen8 comicScreen" id="eightScreen" src="../realityComic/assets/media/agudaNetView.mp4" preload="none"></video><img class="spiderman spiderman8" id="spiderMan8" src="../realityComic/assets/img/spidermanLDOL.GIF"/> 
               </div>    
 
                                      
               <div id="parentDiv9" class="sub_screens screen_nine">
-                  <!--<a href="#" id ="parentDiv9" data-toggle="popover" title="Spiderman Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
+                  <a href="#" id ="parentDiv9" data-toggle="popover" title="Spiderman Says:" data-content="Hi Veronica, you wanna grab a bite" data-placement="auto">
                   <span class="label label-primary lab">9</span> 
                   <video class ="comicScreen9" id="ninthScreen" type="video/mp4" src ="../realityComic/assets/media/unilagTreenSky.mp4" preload="none">        
                   </video></a>
-                  <img class="spiderman spiderMan9" id="spiderMan9" src="../realityComic/assets/img/spthinking.GIF">-->
+                  <img class="spiderman spiderMan9" id="spiderMan9" src="../realityComic/assets/img/spthinking.GIF">
               </div>       
               <div  id="parentDiv10" class="sub_screens screen_ten">
-                  <!--<span class="label-primary lab" id="label10">10</span><video class="comicScreen10" id= "tenthScreen" src="../realityComic/assets/media/unilagGarden.mp4" preload="none"></video><img class="spiderman spiderMan10" id="spiderMan10" src="../realityComic/assets/img/smNetrelease.PNG">-->
+                  <span class="label-primary lab" id="label10">10</span><video class="comicScreen10" id= "tenthScreen" src="../realityComic/assets/media/unilagGarden.mp4" preload="none"></video><img class="spiderman spiderMan10" id="spiderMan10" src="../realityComic/assets/img/smNetrelease.PNG">
               </div>
 
               <div  id="parentDiv12" class="sub_screens screen_eleven">
-                  <!--<span class="label label-primary lab">11</span>
+                  <span class="label label-primary lab">11</span>
                   <video class="comicscreen comicScreen11" id="elevenScreen" src ="../realityComic/assets/media/unilagGarden.mp4" preload="none"></video>
-                  <img class="spiderman spiderMan11" id="spiderMan11" src="../realityComic/assets/img/smDangling.GIF">-->
+                  <img class="spiderman spiderMan11" id="spiderMan11" src="../realityComic/assets/img/smDangling.GIF">
                </div>
             
                <div  id="parentDiv13" class="sub_screens screen_twelve">
-                  <!--<span class="label label-primary lab">12</span>
+                  <span class="label label-primary lab">12</span>
                   <video class="comicScreen12" id="underScreen" src ="../realityComic/assets/media/unilagTreenSky.mp4" preload="none"></video>
-                  <img class="spiderman spiderMan11" id="underImage" src="../realityComic/assets/img/spiderRopeFly.GIF">-->
+                  <img class="spiderman spiderMan11" id="underImage" src="../realityComic/assets/img/spiderRopeFly.GIF">
                </div>
 
                <div  id="parentDiv14" class="sub_screens screen_thirteen">
-                  <!--<span class="label label-primary lab">13</span>
+                  <span class="label label-primary lab">13</span>
                   <video class="comicScreen13" id="underScreen2" src ="../realityComic/assets/media/unilagLagoon.mp4" preload="none"></video>
-                  <img class="spiderman spiderMan11" id="underImage2" src="../realityComic/assets/idermanrope2.GIF">-->
+                  <img class="spiderman spiderMan11" id="underImage2" src="../realityComic/assets/idermanrope2.GIF">
                </div>
 
                <div  id="parentDiv15" class="sub_screens screen_fourteen">
-                  <!--<span class="label label-primary lab">14</span><video class="comicScreen14" id="underScreen3" src ="../realityComic/assets/media/blueSkynTree.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage3" src="../realityComic/assets/img/spSidePose.GIF--> 
+                 <span class="label label-primary lab">14</span><video class="comicScreen14" id="underScreen3" src ="../realityComic/assets/media/blueSkynTree.mp4" preload="none"></video><img class="spiderman spiderMan11" id="underImage3" src="../realityComic/assets/img/spSidePose.GIF"> 
               </div>
             
               <div  id="parentDiv16" class="sub_screens screen_fifteen">
-                  <!--<span class="label label-primary lab">11</span>
+                  <span class="label label-primary lab">11</span>
                   <video class="comicScreen15" id="underScreen4" src ="../realityComic/assets/media/yaba.mp4" preload="none"></video>
-                  <img class="spiderman spiderMan11" id="underImage4" src="../realityComic/assets/img/spidermanhanging.GIF">-->
+                  <img class="spiderman spiderMan11" id="underImage4" src="../realityComic/assets/img/spidermanhanging.GIF">
               </div>
 
               <div  id="parentDiv17" class="sub_screens screen_sixteen">
-                  <!--<span class="label label-primary lab">11</span><video class="comicScreen16" id="underScreen5" src ="../realityComic/assets/media/sunset.mp4" preload="none">
-                  </video><img class="spiderman spiderMan11" id="underImage5" src="../realityassets/img/spOpenArms.GIF">-->
+                  <span class="label label-primary lab">11</span><video class="comicScreen16" id="underScreen5" src ="../realityComic/assets/media/sunset.mp4" preload="none">
+                  </video><img class="spiderman spiderMan11" id="underImage5" src="../realityassets/img/spOpenArms.GIF">
               </div>
 
               <div id="parentDiv18" class="sub_screens screen_seventeen">
-                  <!--<span class="label label-primary lab">12</span>
+                  <span class="label label-primary lab">12</span>
                   <video class="comicScreen17 comicScreen" src ="../realityComic/assets/media/sky.mp4" preload="none"></video>
-                  <img class="spiderman spiderMan12" id="spiderMan12" src="../realityComic/assets/img/Spidersense.PNG">-->
+                  <img class="spiderman spiderMan12" id="spiderMan12" src="../realityComic/assets/img/Spidersense.PNG">
               </div>
                 
        </div> 
@@ -164,7 +165,9 @@
   crossorigin="anonymous"></script>
          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-       <script src="https://maps.googleapis.com/maps/api/js"></script>
+          <script src="assets/lib/controller/app.js"></script>
+          <script src="assets/lib/controller/mainController.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src = "assets/lib/js/realityComic.js"></script>
        <script data-main="assets/lib/js/common" src="assets/lib/js/require.js"></script>
   </body>
