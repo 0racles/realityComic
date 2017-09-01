@@ -1,4 +1,4 @@
-define([''], function () { 
+// define([''], function () { 
 	var
 	allScreens = document.querySelectorAll(".allScreens")[0],
 	secondScreen = document.getElementById("secondScreen"),
@@ -788,4 +788,4 @@ define([''], function () {
 		alert("google cannot get your location at this time");
 	};
 	addEventHandlers();
-});
+// });
